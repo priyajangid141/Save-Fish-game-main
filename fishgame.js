@@ -27,3 +27,15 @@ window.addEventListener('keyup',(e) =>
      break;
     }
 });
+var fishmouse = document.getElementById('fish');
+document.addEventListener('mousemove', function(e){
+  var x= e.clientX;
+  var y= e.clientY;
+  fishmouse.style.left=x+ 'px';
+
+  fishmouse.style.top=y+'px';
+
+
+
+});
+
