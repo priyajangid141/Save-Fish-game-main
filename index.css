@@ -14,8 +14,40 @@ body{
     height: 100%;
 }
 
-/* #fish{adfskj;l */
-    /* margin: 150px; */
-    position: absolute;
-    top:55%
-/* }adfskj;l */
+#stone{
+
+    position:absolute;
+    bottom: 0px;
+    right:0px;
+  opacity: 50%;
+      width: 200px;
+      height: 200px;
+    }
+    #can{
+  
+      position:absolute;
+      bottom: 15px;
+    left:10px;
+      bottom:20px;
+      opacity: 50%;
+        width: 200px;
+        height: 200px;
+      }
+      #bottle{
+
+        position:absolute;
+        top: 150px;
+        right:20px;
+      opacity: 50%;
+          width: 200px;
+          height: 200px;
+        }
+        #fish{
+            position:absolute;
+            width: 20%;
+            height: 20%;
+            /* border:2px solid #000 ; */
+            transition: 0.1s;
+            /* box-sizing: border-box; */
+            transform :translate(-50%,-50%) ;
+        }

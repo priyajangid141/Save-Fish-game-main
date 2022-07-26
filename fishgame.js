@@ -20,10 +20,24 @@ window.addEventListener('keyup',(e) =>
     fish.style.left=parseInt( fish.style.left)+ moveby + 'px';
     break;
      case 'ArrowUp':
-  fish.style.top=parseInt( fish.style.left)-moveby + 'px';
+  fish.style.top=parseInt( fish.style.left)- moveby + 'px';
   break;
     case 'ArrowDown':
-     fish.style.top=parseInt( fish.style.left)+moveby + 'px';
+     fish.style.top=parseInt( fish.style.left)+ fmoveby + 'px';
      break;
     }
+});
+   
+
+
+var fishmouse = document.getElementById('fish');
+document.addEventListener('mousemove', function(e){
+  var x= e.clientX;
+  var y= e.clientY;
+  fishmouse.style.left=x+ 'px';
+
+  fishmouse.style.top=y+'px';
+
+
+
 });
